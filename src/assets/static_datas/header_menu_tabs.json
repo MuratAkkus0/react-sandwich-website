@@ -1,0 +1,30 @@
+{
+  "tabs": [
+    {
+      "tabName": "Github",
+      "dropdownContent": [
+        {
+          "tabName": "deneme",
+          "dropdownContent": []
+        }
+      ]
+    },
+    {
+      "tabName": "Docs",
+      "dropdownContent": [
+        {
+          "tabName": "deneme",
+          "dropdownContent": []
+        }
+      ]
+    },
+    {
+      "tabName": "Pricing",
+      "dropdownContent": []
+    },
+    {
+      "tabName": "Contact",
+      "dropdownContent": []
+    }
+  ]
+}

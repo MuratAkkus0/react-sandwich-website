@@ -1,0 +1,28 @@
+{
+  "features": [
+    {
+      "title": "Lorem Ipsum",
+      "details": "At vero eos et accusamus"
+    },
+    {
+      "title": "Maecenas nec",
+      "details": "Nemo enim ipsam voluptatem"
+    },
+    {
+      "title": "Sed fringilla",
+      "details": "Nam libero tempore"
+    },
+    {
+      "title": "Integer tincidunt",
+      "details": "Quis autem vel eum iure"
+    },
+    {
+      "title": "Donec pede justo",
+      "details": "Nemo enim ipsam voluptatem"
+    },
+    {
+      "title": "Quisque rutrum",
+      "details": "Nam libero tempore"
+    }
+  ]
+}
