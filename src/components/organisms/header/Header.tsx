@@ -3,7 +3,12 @@ import HeaderMenu from "@/components/organisms/header/HeaderMenu";
 import HeaderMenuItem from "@/components/organisms/header/HeaderMenuItem";
 import { Button } from "@/components/ui/Button";
 import HeaderMenuTabList from "@/assets/static_datas/header_menu_tabs.json";
-import { HeaderMenuTabModel } from "@/types/models/header/HeaderMenuTabModel";
+
+type HeaderMenuTabModel = {
+  tabName: string;
+  dropdownContent: HeaderMenuTabModel[];
+};
+
 const Header = () => {
   const tabList = HeaderMenuTabList.tabs as HeaderMenuTabModel[];
 

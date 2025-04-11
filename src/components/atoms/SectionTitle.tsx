@@ -1,4 +1,8 @@
-import { SectionTitleModel } from "@/types/models/atoms/SectionTitleModel";
+type SectionTitleModel = {
+  firstText: string;
+  secondText: string;
+  reverseColorSequence?: boolean;
+};
 
 const SectionTitle: React.FC<SectionTitleModel> = ({
   firstText,

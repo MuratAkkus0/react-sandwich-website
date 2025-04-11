@@ -1,5 +1,9 @@
 import boxIco from "@/assets/icons/boxIco.svg";
-import { FeatureCardModel } from "@/types/models/organisms/FeatureCardModel";
+
+type FeatureCardModel = {
+  title: string;
+  details: string;
+};
 
 const FeatureCard: React.FC<FeatureCardModel> = ({ title, details }) => {
   return (

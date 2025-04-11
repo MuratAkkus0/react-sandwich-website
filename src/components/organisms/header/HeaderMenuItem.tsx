@@ -5,8 +5,12 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/HeaderNavigationMenu";
-import { HeaderMenuItemModel } from "@/types/models/header/HeaderMenuItemModel";
-import { Link } from "react-router-dom";
+import { ReactNode } from "react";
+
+type HeaderMenuItemModel = {
+  tabName: string;
+  children?: ReactNode;
+};
 
 const HeaderMenuItem: React.FC<HeaderMenuItemModel> = ({
   tabName,

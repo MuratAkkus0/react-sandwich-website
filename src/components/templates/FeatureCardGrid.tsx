@@ -1,4 +1,8 @@
-import { FeatureCardGridModel } from "@/types/models/templates/FeatureCardGrid";
+import { ReactNode } from "react";
+
+type FeatureCardGridModel = {
+  children: ReactNode;
+};
 
 const FeatureCardGrid: React.FC<FeatureCardGridModel> = ({ children }) => {
   return (

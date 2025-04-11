@@ -2,7 +2,11 @@ import {
   NavigationMenu,
   NavigationMenuList,
 } from "@/components/ui/HeaderNavigationMenu";
-import { HeaderMenuModel } from "@/types/models/header/HeaderMenuModel";
+import { ReactNode } from "react";
+
+type HeaderMenuModel = {
+  children: ReactNode;
+};
 
 const HeaderMenu: React.FC<HeaderMenuModel> = ({ children }) => {
   return (
