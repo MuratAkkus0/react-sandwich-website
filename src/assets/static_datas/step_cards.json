@@ -1,0 +1,19 @@
+{
+  "steps": [
+    {
+      "step": "STEP ONE",
+      "title": "Donec sodales",
+      "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec."
+    },
+    {
+      "step": "STEP TWO",
+      "title": "Nam quam nunc",
+      "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec."
+    },
+    {
+      "step": "STEP THREE",
+      "title": "Cum sociis",
+      "details": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec."
+    }
+  ]
+}

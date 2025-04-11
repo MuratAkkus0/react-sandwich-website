@@ -1,14 +1,18 @@
 import Astronaut from "@/assets/icons/astronaut-63 1.svg";
 
-// export type StepCardModel
+type StepCardModel = {
+  step: string;
+  title: string;
+  details: string;
+};
 
-const StepCard = ({ step, title, details }) => {
+const StepCard: React.FC<StepCardModel> = ({ step, title, details }) => {
   return (
     <>
       <div className="w-[434px] h-[512px] px-8 bg-[#F5F5F5] flex flex-col justify-around relative overflow-hidden rounded-lg">
-        <h5 className="text-xs">Step One</h5>
+        <h5 className="text-xs font-medium">{step}</h5>
         <img
-          className="absolute top-0 -right-4"
+          className="absolute -top-4 -right-4"
           src={Astronaut}
           alt="Astronaut Image"
         />

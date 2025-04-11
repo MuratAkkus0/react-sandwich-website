@@ -3,7 +3,7 @@ import { Button } from "../ui/Button";
 const Hero = () => {
   return (
     <>
-      <section className="pt-32 flex flex-col justify-center items-center">
+      <section className="flex flex-col justify-center items-center">
         <div className="mb-12 flex flex-col gap-8 justify-center items-center">
           <p className="text-8xl font-bold">Launch your</p>
           <p className="text-8xl font-bold text-[#666666]">Saas faster</p>
@@ -28,7 +28,11 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <p className="hover:underline">Baked with ❤️, Crafted for you </p>
+        <p className="hover:underline text-sm">
+          <span className="text-[#000000A3]">Baked with </span>
+          <span className="text-[10px]">❤️</span>,{" "}
+          <span className="text-[#000000A3]">Crafted for you</span>
+        </p>
       </section>
     </>
   );

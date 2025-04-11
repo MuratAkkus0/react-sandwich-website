@@ -17,7 +17,11 @@ const Features = () => {
             {/* card */}
             <FeatureCardGrid>
               {featureArray.map((item, key) => (
-                <FeatureCard title={item.title} details={item.details} />
+                <FeatureCard
+                  key={key}
+                  title={item.title}
+                  details={item.details}
+                />
               ))}
             </FeatureCardGrid>
           </div>
