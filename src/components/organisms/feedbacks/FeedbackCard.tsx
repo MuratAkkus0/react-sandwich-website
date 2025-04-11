@@ -1,17 +1,23 @@
-import userPP from "@/assets/icons/userPP.svg";
+import { ReactNode } from "react";
 
-const FeedbackCard = () => {
+type FeedbackCardModel = {
+  children: ReactNode;
+  userName: string;
+  userPhoto: string;
+};
+
+const FeedbackCard: React.FC<FeedbackCardModel> = ({
+  children,
+  userName,
+  userPhoto,
+}) => {
   return (
     <>
-      {" "}
       <div className="w-[434px] h-[273px] bg-[#F5F5F5] rounded-lg p-8 space-y-8">
-        <p className="w-[85%] font-medium text-[20px]">
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-          suscipit laboriosam, nisi ut
-        </p>
+        <p className="w-[85%] font-medium text-[20px]">{children}</p>
         <div className="flex gap-4 items-center">
-          <img src={userPP} alt="Profile photo" />
-          <p className="font-medium text-[20px]">Donna B.</p>
+          <img src={userPhoto} alt="Profile photo" />
+          <p className="font-medium text-[20px]">{userName}</p>
         </div>
       </div>
     </>

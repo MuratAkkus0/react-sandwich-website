@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "title": "Product",
+      "links": [
+        {
+          "label": "Courses",
+          "href": "#"
+        },
+        {
+          "label": "Schedule",
+          "href": "#"
+        },
+        {
+          "label": "Pricing",
+          "href": "#"
+        },
+        {
+          "label": "Teachers",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "title": "Pages",
+      "links": [
+        {
+          "label": "Pricing",
+          "href": "#"
+        },
+        {
+          "label": "Contact us",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        {
+          "label": "FAQ",
+          "href": "#"
+        },
+        {
+          "label": "Blog",
+          "href": "#"
+        },
+        {
+          "label": "Privacy policy",
+          "href": "#"
+        },
+        {
+          "label": "Terms of services",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "title": "Lore Ipsum",
+      "links": [
+        {
+          "label": "Boniviede",
+          "href": "#"
+        },
+        {
+          "label": "Capricun",
+          "href": "#"
+        },
+        {
+          "label": "Kalelious",
+          "href": "#"
+        },
+        {
+          "label": "Youtitude",
+          "href": "#"
+        }
+      ]
+    }
+  ]
+}

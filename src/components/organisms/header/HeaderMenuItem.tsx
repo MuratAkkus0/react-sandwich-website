@@ -22,7 +22,7 @@ const HeaderMenuItem: React.FC<HeaderMenuItemModel> = ({
         {children ? (
           <>
             <NavigationMenuTrigger>{tabName}</NavigationMenuTrigger>
-            <NavigationMenuContent>
+            <NavigationMenuContent className="w-[500px]">
               <NavigationMenuLink>{children}</NavigationMenuLink>
             </NavigationMenuContent>
           </>

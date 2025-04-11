@@ -1,3 +1,5 @@
+import SectionTitle from "../atoms/SectionTitle";
+import SectionUnderTitle from "../atoms/SectionUnderTitle";
 import { Button } from "../ui/Button";
 
 const Hero = () => {
@@ -5,12 +7,19 @@ const Hero = () => {
     <>
       <section className="flex flex-col justify-center items-center">
         <div className="mb-12 flex flex-col gap-8 justify-center items-center">
-          <p className="text-8xl font-bold">Launch your</p>
-          <p className="text-8xl font-bold text-[#666666]">Saas faster</p>
-          <p className="text-2xl font-medium text-[#0000008F] text-center">
+          <SectionTitle
+            firstText="Launch your"
+            secondText="Saas faster"
+            fontSize=" text-8xl"
+            SameFontWeightForBoth="700"
+            breakWords
+            reverseColorSequence
+          />
+
+          <SectionUnderTitle>
             Nemo enim ipsam voluptatem quia volupta <br />
             sit aspernatur aut odit aut fugit
-          </p>
+          </SectionUnderTitle>
           <div className="flex gap-4">
             <Button
               size="xl"

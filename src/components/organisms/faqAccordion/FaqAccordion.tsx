@@ -1,8 +1,13 @@
 import AccordionItem from "./AccordionItem";
 import SectionTitle from "@/components/atoms/SectionTitle";
 import IntermediateLine from "@/components/atoms/IntermediateLine";
+import AccordionItemDetail from "./AccordionItemDetail";
+import FaqData from "@/assets/static_datas/faq.json";
+import { useState } from "react";
 
 const FaqAccordion = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const faqArr = FaqData.faqs;
   return (
     <>
       <div className="my-28">
@@ -14,23 +19,20 @@ const FaqAccordion = () => {
         />
         <div className="w-full flex ">
           <div className="flex-[6] border border-[#00000007] border-r-0">
-            <AccordionItem isActive={true}>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor?
-            </AccordionItem>
-            <AccordionItem>Donec sodales sagittis magna?</AccordionItem>
-            <AccordionItem>Vivamus elementum semper nisi?</AccordionItem>
-            <AccordionItem>Curabitur ullamcorper ultricies nis?</AccordionItem>
-            <AccordionItem>
-              Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper?
-            </AccordionItem>
+            {faqArr.map((item, key) => (
+              <AccordionItem
+                key={key}
+                onClick={() => setActiveIndex(key)}
+                isActive={activeIndex == key ? true : false}
+              >
+                {item.question}
+              </AccordionItem>
+            ))}
           </div>
           <div className="flex-[6] font-normal text-lg p-16 bg-[#F5F5F5]">
-            <p className="w-[80%] leading-[26px]">
-              Quis autem vel eum iure reprehenderit qui in ea voluptate velit
-              esse quam nihil molestiae consequatur, vel illum qui dolorem eum
-              fugiat quo voluptas nulla pariatur?
-            </p>
+            <AccordionItemDetail>
+              {faqArr[activeIndex].answer}
+            </AccordionItemDetail>
           </div>
         </div>
       </div>

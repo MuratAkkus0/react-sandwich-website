@@ -1,52 +1,42 @@
 import Logo from "@/components/atoms/Logo";
 import InstaIco from "@/assets/icons/insta-ico.svg";
 import FaceIco from "@/assets/icons/facebook-ico.svg";
+import FooterLinkContainer from "./FooterLinkContainer";
+import FooterLinkTitle from "./FooterLinkTitle";
+import FooterLink from "./FooterLink";
+import FooterData from "@/assets/static_datas/footer.json";
+import { href } from "react-router-dom";
 const Footer = () => {
+  const footerDataArr = FooterData.data;
   return (
     <>
-      {" "}
       <div>
-        <div className="flex justify-between">
+        <div className="flex max-md:flex-col max-md:items-center justify-between">
           <div className="flex-[2]">
             <Logo />
           </div>
-          <div className="flex-[6] grid grid-rows-1 grid-cols-4">
-            <div className="space-y-3">
-              <h5 className="font-semibold text-base">Product</h5>
-              <div className="font-normal">
-                <p>Courses</p>
-                <p>Schedule</p>
-                <p>Pricing</p>
-                <p>Teachers</p>
+          <div className="flex-[6] grid grid-rows-1 grid-cols-4 max-sm:grid-cols-1 max-sm:auto-rows-auto max-md:my-10 gap-4 justify-items-start">
+            {footerDataArr.map((item, key) => (
+              <div key={key} className="space-y-3">
+                <FooterLinkTitle>{item.title}</FooterLinkTitle>
+                <FooterLinkContainer>
+                  {item.links.map((link, i) => (
+                    <FooterLink key={i} href={link.href}>
+                      {link.label}
+                    </FooterLink>
+                  ))}
+                </FooterLinkContainer>
               </div>
-            </div>
-            <div className="space-y-3">
-              <h5 className="font-semibold text-base">Product</h5>
-              <div className="font-normal">
-                <p>Courses</p>
-                <p>Schedule</p>
-                <p>Pricing</p>
-                <p>Teachers</p>
-              </div>
-            </div>
-            <div className="space-y-3">
-              <h5 className="font-semibold text-base">Product</h5>
-              <div className="font-normal">
-                <p>Courses</p>
-                <p>Schedule</p>
-                <p>Pricing</p>
-                <p>Teachers</p>
-              </div>
-            </div>
+            ))}
           </div>
-          <div className="flex-[2] flex flex-col items-end gap-6">
+          <div className="flex-[2] flex flex-col max-md:flex-row items-end gap-6">
             <img className="w-5 h-5" src={InstaIco} alt="instagram icon" />
             <img className="w-5 h-5" src={FaceIco} alt="facebook icon" />
             <img className="w-5 h-5" src={InstaIco} alt="instagram icon" />
             <img className="w-5 h-5" src={FaceIco} alt="facebook icon" />
           </div>
         </div>
-        <div className="py-24 flex justify-between">
+        <div className="py-24 flex max-sm:flex-col max-sm:gap-5 justify-between">
           <p className="font-medium text-[14px] text-[#0000008F]">
             © 2025 Gemi, Inc. All rights reserved
           </p>
