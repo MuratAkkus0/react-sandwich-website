@@ -12,7 +12,7 @@ import Footer from "./components/organisms/footer/Footer";
 
 function App() {
   return (
-    <div className="px-7 space-y-14 container mx-auto">
+    <div className="px-7 space-y-14 container mx-auto relative">
       <Header />
       <Hero />
       <Sandwich />

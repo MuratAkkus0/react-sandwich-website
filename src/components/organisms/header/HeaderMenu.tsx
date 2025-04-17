@@ -6,11 +6,12 @@ import { ReactNode } from "react";
 
 type HeaderMenuModel = {
   children: ReactNode;
+  className?: string;
 };
 
-const HeaderMenu: React.FC<HeaderMenuModel> = ({ children }) => {
+const HeaderMenu: React.FC<HeaderMenuModel> = ({ children, className }) => {
   return (
-    <div>
+    <div className={className}>
       <NavigationMenu>
         <NavigationMenuList>{children}</NavigationMenuList>
       </NavigationMenu>
