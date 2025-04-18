@@ -24,7 +24,7 @@ const Header = () => {
   });
 
   return (
-    <div className="w-full h-[132px] grid grid-rows-1 grid-cols-[auto_1fr_auto] items-center max-lg:grid-cols-grid-cols-[auto_1fr] px-[35px]">
+    <div className="w-full h-[132px] grid grid-rows-1 grid-cols-[auto_1fr] items-center max-lg:grid-cols-[auto_1fr] max-lg:px-0 px-[35px] overflow-hidden ">
       <Logo />
 
       {isMenuActive && (
@@ -39,10 +39,10 @@ const Header = () => {
         size={32}
       />
       <div
-        className="max-lg:max-h-dvh max-lg:absolute max-lg:top-0 max-lg:bottom-0 max-lg:px-6 max-lg:py-10 max-lg:bg-white max-lg:flex max-lg:flex-col max-lg:justify-between transition-all duration-300"
+        className="flex max-lg:max-h-dvh max-lg:absolute max-lg:top-0 max-lg:bottom-0 max-lg:px-6 max-lg:py-8 max-lg:bg-white max-lg:flex max-lg:flex-col max-lg:justify-between transition-all duration-300"
         style={isMenuActive ? { right: "0" } : { right: "-150%" }}
       >
-        <HeaderMenu className="">
+        <HeaderMenu className="flex-1 lg:flex lg:justify-center">
           {tabList.map((tab, index) => {
             return (
               <HeaderMenuItem tabName={tab.tabName} key={index}>

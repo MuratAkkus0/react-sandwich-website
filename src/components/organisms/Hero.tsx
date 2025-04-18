@@ -10,27 +10,27 @@ const Hero = () => {
           <SectionTitle
             firstText="Launch your"
             secondText="Saas faster"
-            fontSize=" text-8xl"
+            fontSize=" text-8xl max-lg:text-7xl max-sm:text-6xl"
             SameFontWeightForBoth="700"
             breakWords
             reverseColorSequence
           />
 
-          <SectionUnderTitle>
+          <SectionUnderTitle className="max-lg:text-lg px-5 max-sm:text-base">
             Nemo enim ipsam voluptatem quia volupta <br />
             sit aspernatur aut odit aut fugit
           </SectionUnderTitle>
-          <div className="flex gap-4">
+          <div className="flex gap-4 max-lg:flex-col">
             <Button
               size="xl"
-              className="text-2xl font-semibold"
+              className="text-xl max-lg:text-lg font-semibold"
               variant={"default"}
             >
               Primary Button
             </Button>
             <Button
               size="xl"
-              className="text-2xl font-semibold"
+              className="text-xl max-lg:text-lg font-semibold"
               variant={"secondary"}
             >
               Secondary Button

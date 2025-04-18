@@ -8,7 +8,7 @@ const AccordionItemDetail: React.FC<AccordionItemDetailModel> = ({
 }) => {
   return (
     <>
-      <p className="w-[80%] leading-[26px]">{children}</p>
+      <p className="w-[80%] max-sm:w-full leading-[26px]">{children}</p>
     </>
   );
 };

@@ -1,7 +1,9 @@
 import FeedbackCard from "./FeedbackCard";
 import userPP from "@/assets/icons/userPP.svg";
+import feedbackData from "@/assets/static_datas/feedbacks.json";
 
 const Feedback = () => {
+  const feedbackArr = feedbackData.feedbacks;
   return (
     <>
       {" "}
@@ -21,18 +23,15 @@ const Feedback = () => {
         </div>
         <div className="flex-[13]">
           <div className="w-fit grid grid-cols-2 grid-rows-2 max-lg:grid-cols-1 max-lg:grid-rows-1 justify-items-center gap-x-11 gap-y-8">
-            <FeedbackCard userName="Donna B." userPhoto={userPP}>
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam, nisi ut
-            </FeedbackCard>
-            <FeedbackCard userName="Donna B." userPhoto={userPP}>
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam, nisi ut
-            </FeedbackCard>
-            <FeedbackCard userName="Donna B." userPhoto={userPP}>
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam, nisi ut
-            </FeedbackCard>
+            {feedbackArr.map((item, key) => (
+              <FeedbackCard
+                key={key}
+                userName={item.userName}
+                userPhoto={userPP}
+              >
+                {item.feedback}
+              </FeedbackCard>
+            ))}
           </div>
         </div>
       </div>

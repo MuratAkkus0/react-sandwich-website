@@ -13,8 +13,10 @@ const FeatureCard: React.FC<FeatureCardModel> = ({ title, details }) => {
           <img className="w-[50px] h-[50px]" src={boxIco} alt="Box Icon" />
         </div>
         <div className="flex-[1] space-y-3">
-          <h1 className="text-[28px] font-medium text-center">{title}</h1>
-          <p className="text-[20px] font-medium text-[#0000008F] text-center">
+          <h1 className="text-[28px] max-sm:text-2xl font-medium text-center">
+            {title}
+          </h1>
+          <p className="text-[20px] max-sm:text-lg font-medium text-[#0000008F] text-center">
             {details}
           </p>
         </div>

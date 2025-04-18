@@ -5,17 +5,16 @@ import FooterLinkContainer from "./FooterLinkContainer";
 import FooterLinkTitle from "./FooterLinkTitle";
 import FooterLink from "./FooterLink";
 import FooterData from "@/assets/static_datas/footer.json";
-import { href } from "react-router-dom";
 const Footer = () => {
   const footerDataArr = FooterData.data;
   return (
     <>
       <div>
-        <div className="flex max-md:flex-col max-md:items-center justify-between">
+        <div className="flex max-md:flex-col max-md:items-start justify-between">
           <div className="flex-[2]">
             <Logo />
           </div>
-          <div className="flex-[6] grid grid-rows-1 grid-cols-4 max-sm:grid-cols-1 max-sm:auto-rows-auto max-md:my-10 gap-4 justify-items-start">
+          <div className="flex-[6] grid grid-rows-1 grid-cols-4 max-md:flex max-md:flex-wrap max-sm:justify-between max-md:my-10 gap-4 justify-items-start">
             {footerDataArr.map((item, key) => (
               <div key={key} className="space-y-3">
                 <FooterLinkTitle>{item.title}</FooterLinkTitle>

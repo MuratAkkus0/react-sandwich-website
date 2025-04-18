@@ -2,7 +2,7 @@ type SectionTitleModel = {
   firstText: string;
   secondText: string;
   className?: string;
-  fontSize?: " text-[40px]" | " text-8xl";
+  fontSize?: " text-[40px]" | " text-8xl" | string;
   breakWords?: boolean;
   reverseColorSequence?: boolean;
   SameFontWeightForBoth?: "400" | "500" | "600" | "700";

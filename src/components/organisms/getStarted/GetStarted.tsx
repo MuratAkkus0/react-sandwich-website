@@ -9,14 +9,15 @@ const GetStarted = () => {
     <>
       <div className="mb-30 w-full flex flex-col justify-center items-center gap-11">
         <SectionTitle
-          firstText="Get started"
+          firstText="Get started "
           secondText="in three steps"
           reverseColorSequence
         />
-        <div className="flex flex-wrap justify-center items-center gap-11">
+        <div className="flex flex-wrap justify-center max-lg:justify- items-center gap-11">
           {stepArray.map((Item, key) => (
             <StepCard
               key={key}
+              index={key}
               step={Item.step}
               title={Item.title}
               details={Item.details}

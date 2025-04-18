@@ -27,7 +27,11 @@ const AccordionItem: React.FC<AccordionItemModel> = ({
       </p>
       <div className="flex items-center shrink-0">
         {isActive ? (
-          <img className="w-8 h-8" src={rightArrow} alt="right arrow icon" />
+          <img
+            className="w-8 h-8 max-lg:rotate-90 transition-all"
+            src={rightArrow}
+            alt="right arrow icon"
+          />
         ) : (
           <img
             className="w-8 h-8"
