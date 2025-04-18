@@ -22,7 +22,11 @@ const FaqAccordion = () => {
             {faqArr.map((item, key) => (
               <div key={key}>
                 <AccordionItem
-                  onClick={() => setActiveIndex(key)}
+                  onClick={() =>
+                    activeIndex == key
+                      ? setActiveIndex(-1)
+                      : setActiveIndex(key)
+                  }
                   isActive={activeIndex == key ? true : false}
                 >
                   {item.question}
@@ -39,7 +43,7 @@ const FaqAccordion = () => {
           </div>
           <div className="flex-[6] max-md:hidden font-normal text-lg p-16 bg-[#F5F5F5]">
             <AccordionItemDetail>
-              {faqArr[activeIndex].answer}
+              {activeIndex >= 0 && faqArr[activeIndex].answer}
             </AccordionItemDetail>
           </div>
         </div>
