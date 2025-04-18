@@ -8,8 +8,8 @@ const Feedback = () => {
   const feedbackArr = feedbackData.feedbacks;
   return (
     <>
-      <div className="w-full flex max-xl:flex-col max-xl:gap-8">
-        <div className="flex-[7] gap-5">
+      <div className="w-full flex max-2xl:flex-col max-2xl:gap-8">
+        <div className="flex-[6] flex flex-col gap-5">
           <FeedbackSectionTitle>
             <span className="text-[#0000008F] font-normal">Don’t just </span>
             take our <br /> words for it
@@ -20,8 +20,8 @@ const Feedback = () => {
             <br /> viverra quis
           </FeedbackSectionUndertitle>
         </div>
-        <div className="flex-[13]">
-          <div className="w-fit grid grid-cols-2 grid-rows-2 max-lg:grid-cols-1 max-lg:grid-rows-1 justify-items-center gap-x-11 gap-y-8">
+        <div className="flex-[14]">
+          <div className="w-fit grid grid-cols-2 grid-rows-2 max-lg:grid-cols-1 max-lg:grid-rows-1 justify-items-center gap-x-10 gap-y-8">
             {feedbackArr.map((item, key) => (
               <FeedbackCard
                 key={key}
